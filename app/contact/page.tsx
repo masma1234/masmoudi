@@ -32,10 +32,10 @@ export default function Contact() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Contact Information */}
           <div>
-            <h2 className="text-2xl font-semibold mb-6">Get in Touch</h2>
+            <h2 className="text-2xl font-semibold mb-6">Contactez Nous</h2>
             <div className="space-y-6">
               <div>
-                <h3 className="text-lg font-medium mb-2">Address</h3>
+                <h3 className="text-lg font-medium mb-2">Adresse</h3>
                 <p className="text-gray-600">
                   Mahdia Route KM 5.5, Markez Becha
                   <br />
@@ -45,24 +45,24 @@ export default function Contact() {
                     rel="noopener noreferrer"
                     className="text-blue-600 hover:text-blue-800 underline"
                   >
-                    View on Google Maps
+                    Voir Localisation
                   </a>
                 </p>
               </div>
               <div>
                 <h3 className="text-lg font-medium mb-2">Email</h3>
-                <p className="text-gray-600">ahmed.masmoudi@gmail.com</p>
+                <p className="text-gray-600">masmoudiahmed245@gmail.com</p>
               </div>
               <div>
                 <h3 className="text-lg font-medium mb-2">Phone</h3>
                 <p className="text-gray-600">+216 50 478 435</p>
               </div>
               <div>
-                <h3 className="text-lg font-medium mb-2">Business Hours</h3>
+                <h3 className="text-lg font-medium mb-2">Horraire de travail</h3>
                 <p className="text-gray-600">
-                  Monday - Friday: 9:00 AM - 6:00 PM<br />
-                  Saturday: 10:00 AM - 2:00 PM<br />
-                  Sunday: Closed
+                  Lundi - Vendredi: 8:30 AM - 6:00 PM<br />
+                  Samedi: 9:00 AM - 2:00 PM<br />
+                  
                 </p>
               </div>
             </div>
@@ -70,7 +70,7 @@ export default function Contact() {
 
           {/* Contact Form */}
           <div>
-            <h2 className="text-2xl font-semibold mb-6">Send us a Message</h2>
+            <h2 className="text-2xl font-semibold mb-6">Envoyez un message</h2>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
@@ -132,7 +132,7 @@ export default function Contact() {
                 type="submit"
                 className="w-full bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors"
               >
-                Send Message
+                envoyer
               </button>
             </form>
           </div>
