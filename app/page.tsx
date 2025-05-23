@@ -39,12 +39,12 @@ export default function Home() {
             {[1, 2, 3].map((item) => (
               <div key={item} className="bg-white rounded-lg shadow-lg overflow-hidden">
                 <div className="relative h-64">
-                  <Image
-                    src={`/images/IMG-20250517-WA00${item.toString().padStart(2, '0')}.jpg`}
-                    alt={`Featured product ${item}`}
-                    fill
+                <Image
+                  src={`/images/${item}.jpg`}
+                  alt={`Featured product ${item}`}
+                   fill
                     className="object-cover"
-                  />
+                   />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-2">Premium Hinge Set</h3>
