@@ -4,11 +4,11 @@ import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-type Category = 'all' | 'paumelle' | 'boule' | 'sphere';
+type Categorie = 'all' | 'paumelle' | 'boule' | 'sphere';
 
 interface Article {
   id: number;
-  category: Category;
+  category: Categorie;
   imageUrl: string;
   title: string;
   description: string;
@@ -19,106 +19,104 @@ const articles: Article[] = [
     id: 1,
     category: 'boule',
     imageUrl: '/images/1.jpg',
-    title: 'Boule Classic',
-    description: 'Traditional boule hinge with elegant design'
+    title: 'Boule Classique',
+    description: 'Charnière boule traditionnelle au design élégant'
   },
   {
     id: 2,
     category: 'sphere',
     imageUrl: '/images/2.jpg',
-    title: 'Sphere Premium',
-    description: 'High-quality sphere hinge with modern finish'
+    title: 'Sphère Premium',
+    description: 'Charnière sphérique de haute qualité avec finition moderne'
   },
   {
     id: 3,
     category: 'boule',
     imageUrl: '/images/3.jpg',
     title: 'Boule Deluxe',
-    description: 'Luxury boule hinge with unique design'
+    description: 'Charnière boule de luxe au design unique'
   },
   {
     id: 4,
     category: 'boule',
     imageUrl: '/images/4.jpg',
-    title: 'Boule Modern',
-    description: 'Contemporary boule design'
+    title: 'Boule Moderne',
+    description: 'Design boule contemporain'
   },
   {
     id: 5,
     category: 'boule',
     imageUrl: '/images/5.jpg',
     title: 'Boule Premium',
-    description: 'Traditional boule style'
+    description: 'Style boule traditionnel'
   },
   {
     id: 6,
     category: 'boule',
     imageUrl: '/images/6.jpg',
-    title: 'Boule Elite',
-    description: 'Modern boule design'
+    title: 'Boule Élite',
+    description: 'Design boule moderne'
   },
   {
     id: 7,
     category: 'boule',
     imageUrl: '/images/7.jpg',
-    title: 'Boule Master',
-    description: 'Premium boule hinge'
+    title: 'Boule Maître',
+    description: 'Charnière boule premium'
   },
   {
     id: 8,
     category: 'boule',
     imageUrl: '/images/8.jpg',
-    title: 'Boule Supreme',
-    description: 'Contemporary boule style'
+    title: 'Boule Suprême',
+    description: 'Style boule contemporain'
   },
   {
     id: 9,
     category: 'sphere',
     imageUrl: '/images/9.jpg',
-    title: 'Sphere Deluxe',
-    description: 'High-end sphere design'
+    title: 'Sphère Deluxe',
+    description: 'Design sphérique haut de gamme'
   },
   {
     id: 10,
     category: 'sphere',
     imageUrl: '/images/10.jpg',
-    title: 'Sphere Modern',
-    description: 'Premium sphere collection'
+    title: 'Sphère Moderne',
+    description: 'Collection sphérique premium'
   },
   {
     id: 11,
     category: 'boule',
     imageUrl: '/images/11.jpg',
     title: 'Boule Grand',
-    description: 'Luxury boule design'
+    description: 'Design boule de luxe'
   },
   {
     id: 12,
     category: 'paumelle',
     imageUrl: '/images/12.jpg',
-    title: 'Paumelle Classic',
-    description: 'Traditional paumelle style'
+    title: 'Paumelle Classique',
+    description: 'Style paumelle traditionnel'
   },
- 
   {
     id: 14,
     category: 'paumelle',
     imageUrl: '/images/14.jpg',
     title: 'Paumelle Premium',
-    description: 'Elite paumelle collection'
+    description: 'Collection paumelle élite'
   },
-
   {
     id: 16,
     category: 'paumelle',
     imageUrl: '/images/16.jpg',
-    title: 'Paumelle Master',
-    description: 'Master series paumelle'
+    title: 'Paumelle Maître',
+    description: 'Série maîtresse de paumelle'
   }
 ];
 
 export default function Articles() {
-  const [selectedCategory, setSelectedCategory] = useState<Category>('all');
+  const [selectedCategory, setSelectedCategory] = useState<Categorie>('all');
 
   const filteredArticles = selectedCategory === 'all'
     ? articles
@@ -127,11 +125,11 @@ export default function Articles() {
   return (
     <div className="pt-24 pb-16 px-4">
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-4xl font-bold text-center mb-12">Our Articles</h1>
+        <h1 className="text-4xl font-bold text-center mb-12">Nos Articles</h1>
 
-        {/* Filter Box */}
+        {/* Boîte de filtre */}
         <div className="mb-12 bg-white rounded-lg shadow-md p-6">
-          <h2 className="text-xl font-semibold mb-4">Filter by Category</h2>
+          <h2 className="text-xl font-semibold mb-4">Filtrer par catégorie</h2>
           <div className="flex flex-wrap gap-4">
             <button
               onClick={() => setSelectedCategory('all')}
@@ -141,7 +139,7 @@ export default function Articles() {
                   : 'bg-gray-100 hover:bg-gray-200'
               }`}
             >
-              All
+              Tous
             </button>
             <button
               onClick={() => setSelectedCategory('paumelle')}
@@ -171,12 +169,12 @@ export default function Articles() {
                   : 'bg-gray-100 hover:bg-gray-200'
               }`}
             >
-              Sphere
+              Sphère
             </button>
           </div>
         </div>
 
-        {/* Articles Grid */}
+        {/* Grille des articles */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {filteredArticles.map((article) => (
             <div key={article.id} className="bg-white rounded-lg shadow-md overflow-hidden">
@@ -195,7 +193,7 @@ export default function Articles() {
                   href={`/articles/${article.id}`}
                   className="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors"
                 >
-                  View Details
+                  Voir les détails
                 </Link>
               </div>
             </div>
@@ -204,4 +202,4 @@ export default function Articles() {
       </div>
     </div>
   );
-} 
+}
