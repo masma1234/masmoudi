@@ -77,7 +77,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-semibold mb-2">Qualité Haute Gamme</h3>
               <p className="text-gray-600">
-                We source only the highest quality materials for our products.
+                Nous sommes votre premiére destination pour des articles de décor de luxe .
               </p>
             </div>
             <div className="text-center">
