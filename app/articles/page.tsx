@@ -20,21 +20,21 @@ const articles: Article[] = [
     category: 'boule',
     imageUrl: '/images/1.jpg',
     title: 'Boule Classique',
-    description: 'Charnière boule traditionnelle au design élégant'
+    description: 'Boule traditionnelle au design élégant'
   },
   {
     id: 2,
     category: 'sphere',
     imageUrl: '/images/2.jpg',
     title: 'Sphère Premium',
-    description: 'Charnière sphérique de haute qualité avec finition moderne'
+    description: 'Sphére de haute qualité avec finition moderne'
   },
   {
     id: 3,
     category: 'boule',
     imageUrl: '/images/3.jpg',
     title: 'Boule Deluxe',
-    description: 'Charnière boule de luxe au design unique'
+    description: 'Boule de luxe au design unique'
   },
   {
     id: 4,
@@ -62,7 +62,7 @@ const articles: Article[] = [
     category: 'boule',
     imageUrl: '/images/7.jpg',
     title: 'Boule Maître',
-    description: 'Charnière boule premium'
+    description: 'Boule premium'
   },
   {
     id: 8,
@@ -111,7 +111,7 @@ const articles: Article[] = [
     category: 'paumelle',
     imageUrl: '/images/16.jpg',
     title: 'Paumelle Maître',
-    description: 'Série maîtresse de paumelle'
+    description: 'Série  de paumelle'
   }
 ];
 
