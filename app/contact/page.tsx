@@ -27,7 +27,7 @@ export default function Contact() {
   return (
     <div className="pt-24 pb-16 px-4">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-4xl font-bold text-center mb-12">Contact Us</h1>
+        <h1 className="text-4xl font-bold text-center mb-12">Contacter Nous</h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Contact Information */}
@@ -74,7 +74,7 @@ export default function Contact() {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
-                  Name
+                  Nom
                 </label>
                 <input
                   type="text"
@@ -102,7 +102,7 @@ export default function Contact() {
               </div>
               <div>
                 <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">
-                  Subject
+                  Sujet
                 </label>
                 <input
                   type="text"
