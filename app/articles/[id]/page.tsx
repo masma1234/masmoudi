@@ -11,7 +11,7 @@ const articles = [
     imageUrl: '/images/1.jpg',
     title: 'Boule B',
     description: 'Boule en forme B avec design elegant  ',
-    details: '"Construction en laiton de haute qualité avec une finition polie. Parfait pour les meubles et les armoires de style traditionnel.".',
+    details: 'Construction en laiton de haute qualité avec une finition polie. Parfait pour les meubles et les armoires de style traditionnel.',
     specifications: [
       'Material: Fer',
       'Size: 3" x 3"',
@@ -24,7 +24,7 @@ const articles = [
     imageUrl: '/images/2.jpg',
     title: 'Sphere Premium',
     description: 'Sphere classique bien finie',
-    details: '"Construction en laiton de haute qualité avec une finition polie. Parfait pour les meubles et les armoires de style traditionnel.',
+    details: 'Construction en laiton de haute qualité avec une finition polie. Parfait pour les meubles et les armoires de style traditionnel.',
     specifications: [
       'Material: Fer',
       'Size: 3" x 3"',
@@ -37,7 +37,7 @@ const articles = [
     imageUrl: '/images/3.jpg',
     title: 'Boule Deluxe',
     description: 'Boule en forme W avec un unique design',
-    details: ' boule de luxe avec design unique. Parfaite pour la ferronnerie haut de gamme.',
+    details: 'boule de luxe avec design unique. Parfaite pour la ferronnerie haut de gamme.',
     specifications: [
      'Material: Fer',
       'Size: 3" x 3"',
@@ -50,9 +50,9 @@ const articles = [
     imageUrl: '/images/4.jpg',
      title: 'Boule B',
     description: 'Boule en forme B avec design elegant  ',
-    details: '"Construction en laiton de haute qualité avec une finition polie. Parfait pour les meubles et les armoires de style traditionnel.".',
+    details: 'Construction en laiton de haute qualité avec une finition polie. Parfait pour les meubles et les armoires de style traditionnel.',
     specifications: [
-    'Material: Fer',
+      'Material: Fer',
       'Size: 3" x 3"',
       'Package: 100 pieces'
     ]
@@ -62,10 +62,10 @@ const articles = [
     category: 'boule',
     imageUrl: '/images/5.jpg',
     title: 'Boule Premium',
-    description: 'Style boule Traditionel  ',
+    description: 'Style boule Traditionel ',
     details: 'Boule classique aux éléments de design traditionnels. Parfaite pour la ferronnerie de style patrimonial',
     specifications: [
-    'Material: Fer',
+      'Material: Fer',
       'Size: 3" x 3"',
       'Package: 100 pieces'
     ]
@@ -141,7 +141,7 @@ const articles = [
     imageUrl: '/images/11.jpg',
     title: 'Boule Grand',
     description: 'Boule en forme W avec un unique design',
-    details: ' boule de luxe avec design unique. Parfaite pour la ferronnerie haut de gamme.',
+    details: 'Boule de luxe avec design unique. Parfaite pour la ferronnerie haut de gamme.',
     specifications: [
       'Material: Fer',
       'Size: 3" x 3"',
@@ -245,7 +245,7 @@ export default function ArticleDetails() {
           href="/articles"
           className="inline-block text-blue-600 hover:text-blue-800 mb-8"
         >
-          ← Back to Articles
+          ← Retour à Articles
         </Link>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -285,7 +285,7 @@ export default function ArticleDetails() {
                 href="/contact"
                 className="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors"
               >
-                Contact for Pricing
+                Contact pour plus d'informations
               </Link>
             </div>
           </div>
