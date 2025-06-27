@@ -145,7 +145,7 @@ const articles = [
     specifications: [
       'Material: Fer',
       'Size: 3" x 3"',
-      'Package: 100 pieces's'
+      'Package: 100 pieces'
     ]
   },
   {
