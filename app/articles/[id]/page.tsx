@@ -265,7 +265,7 @@ export default function ArticleDetails() {
             <p className="text-gray-600 mb-6">{article.description}</p>
             
             <div className="mb-8">
-              <h2 className="text-xl font-semibold mb-4">Product Details</h2>
+              <h2 className="text-xl font-semibold mb-4">Description</h2>
               <p className="text-gray-700">{article.details}</p>
             </div>
 
